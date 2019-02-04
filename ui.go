@@ -7,7 +7,7 @@ import (
 )
 
 // Box returns the Swagger UI packr box
-func Box() *packr.Box {
+func Box() packr.Box {
 	return packr.NewBox("./swagger-ui/dist")
 }
 
