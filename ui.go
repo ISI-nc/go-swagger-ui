@@ -13,5 +13,8 @@ func Box() packr.Box {
 
 // HandleAt sets up a http handle at the given path
 func HandleAt(path string) {
+	if path[len(path)-1] != '/' {
+		path += "/"
+	}
 	http.Handle(path, http.StripPrefix(path, http.FileServer(Box())))
 }
