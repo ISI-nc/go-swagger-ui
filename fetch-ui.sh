@@ -9,3 +9,5 @@ file=v$v.tar.gz
 
 rm -fr swagger-ui/dist
 tar zxvf swagger-ui/$file --strip-components=1 -C swagger-ui swagger-ui-$v/dist
+
+sed -i -e '/url:/s,https.*/,/,' swagger-ui/dist/index.html
