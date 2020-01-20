@@ -1,4 +1,4 @@
-module github.com/isi-nc/go-swagger-ui
+module github.com/isi-nc/go-swagger-ui/v3
 
 require (
 	github.com/gobuffalo/envy v1.7.1 // indirect
