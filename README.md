@@ -1,7 +1,7 @@
 ## Usage
 
 ```golang
-import "github.com/mcluseau/go-swagger-ui"
+import "github.com/isi-nc/go-swagger-ui"
 
 func main() {
   // ...
